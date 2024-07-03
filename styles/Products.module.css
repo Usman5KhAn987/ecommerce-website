@@ -1,0 +1,223 @@
+/* styles/Products.module.css */
+
+.productconatiner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 20px;
+  margin: 20px 0;
+}
+
+.cards {
+  background-color: #FCFCFD;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: calc(100% - 40px); /* Default to 100% width minus margins */
+  max-width: 450px; /* Maximum width */
+  height: auto; /* Auto height to adapt to content */
+  margin: 20px;
+  padding: 40px;
+  position: relative;
+  transition: transform 0.2s, box-shadow 0.2s;
+  text-align: center;
+}
+
+.cards:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+}
+
+.pro {
+  font-size: 3.5vw; /* Responsive font size */
+  color: #F7444E;
+}
+
+.h1::after {
+  content: '';
+  display: block;
+  width: 70px; /* Adjust width as needed */
+  height: 3px; /* Adjust height as needed */
+  background-color: red; /* Change color as needed */
+  margin: 0 auto;
+  margin-top: 8px; /* Adjust margin as needed */
+}
+
+.h1 {
+  font-size: 4vw; /* Responsive font size */
+  text-align: center;
+  margin: 20px 0;
+}
+
+.detailbox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.detailbox h6 {
+  font-size: 2.5vw; /* Responsive font size */
+}
+
+.detailbox h5 {
+  font-size: 3vw; /* Responsive font size */
+}
+
+.imageContainer {
+  position: relative;
+  width: 100%;
+  height: 200px;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+
+.cards:hover .overlay {
+  opacity: 1;
+}
+
+.addToCart, .buyNow {
+  margin: 10px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.5vw; /* Responsive font size */
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.addToCart {
+  background: transparent;
+  border: 2px solid #ff6347;
+  color: #ff6347;
+}
+
+.addToCart:hover {
+  background: #ff6347;
+  color: #fff;
+}
+
+.buyNow {
+  background: #000;
+  color: #fff;
+}
+
+.buyNow:hover {
+  background: #444;
+}
+
+.cards h1 {
+  font-size: 4vw; /* Responsive font size */
+  color: #333;
+  margin: 10px 0;
+}
+
+.cards p {
+  font-size: 2.5vw; /* Responsive font size */
+  color: #777;
+  margin: 10px 0;
+}
+
+.button {
+  display: block;
+  margin: 20px auto;
+  padding: 2.5vw 5vw; /* Responsive padding */
+  background-color: #FF0404;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 2vw; /* Responsive font size */
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.button:hover {
+  background-color: #444;
+  color: #fff;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .cards {
+    width: 100%; /* Full width on small screens */
+    padding: 20px; /* Adjust padding for smaller screens */
+  }
+
+  .pro {
+    font-size: 7vw; /* Larger font size on smaller screens */
+  }
+
+  .h1 {
+    font-size: 8vw; /* Larger font size on smaller screens */
+  }
+
+  .detailbox h6 {
+    font-size: 5vw; /* Larger font size on smaller screens */
+  }
+
+  .detailbox h5 {
+    font-size: 6vw; /* Larger font size on smaller screens */
+  }
+
+  .cards h1 {
+    font-size: 6vw; /* Larger font size on smaller screens */
+  }
+
+  .cards p {
+    font-size: 4vw; /* Larger font size on smaller screens */
+  }
+
+  .button {
+    padding: 4vw 8vw; /* Adjust padding for smaller screens */
+    font-size: 4vw; /* Larger font size on smaller screens */
+  }
+}
+
+@media (min-width: 1680px) {
+  .cards {
+    width: 350px; /* Fixed width for larger screens */
+    height: 350px; /* Fixed height for larger screens */
+    padding: 40px;
+  }
+
+  .pro {
+    font-size: 55px; /* Fixed font size for larger screens */
+  }
+
+  .h1 {
+    font-size: 55px; /* Fixed font size for larger screens */
+  }
+
+  .detailbox h6 {
+    font-size: 25px; /* Fixed font size for larger screens */
+  }
+
+  .detailbox h5 {
+    font-size: 30px; /* Fixed font size for larger screens */
+  }
+
+  .cards h1 {
+    font-size: 24px; /* Fixed font size for larger screens */
+  }
+
+  .cards p {
+    font-size: 16px; /* Fixed font size for larger screens */
+  }
+
+  .button {
+    padding: 10px 20px; /* Fixed padding for larger screens */
+    font-size: 16px; /* Fixed font size for larger screens */
+  }
+}

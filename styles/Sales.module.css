@@ -1,0 +1,132 @@
+/* styles/Hero.module.css */
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10vw; /* Responsive padding based on viewport width */
+  background-color: #f8f8f8;
+  background-image: url('/slide.jpg');
+  background-size: cover;
+  background-position: center;
+  min-height: 400px; /* Minimum height */
+}
+
+.content {
+  max-width: 50%;
+  margin-top: -10vw; /* Responsive negative margin for spacing adjustment */
+}
+
+.servicesword {
+  font-weight: bold;
+  color: #ff3e6c;
+  padding: 5px;
+  font-size: 8vw; /* Responsive font size */
+}
+
+.title {
+  font-size: 6vw; /* Responsive font size */
+  line-height: 1.2;
+  color: #1d1d1f;
+}
+
+.highlight {
+  color: #ff3e6c;
+}
+
+.description {
+  font-size: 2vw; /* Responsive font size */
+  line-height: 1.5;
+  color: #555;
+}
+
+.button {
+  display: inline-block;
+  padding: 2vw 4vw; /* Responsive padding */
+  background-color: #ff3e6c;
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.5vw; /* Responsive font size */
+  border-radius: 5px;
+  margin-top: 2vw; /* Responsive margin */
+}
+
+.dot {
+  height: 1vw; /* Responsive size */
+  width: 1vw; /* Responsive size */
+  background-color: #ff3e6c;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 1vw; /* Responsive margin */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 5vw; /* Adjust padding for smaller screens */
+    min-height: auto;
+  }
+
+  .content {
+    max-width: 100%;
+    margin-top: -5vw; /* Adjust negative margin for spacing */
+  }
+
+  .servicesword {
+    font-size: 12vw; /* Adjust font size for smaller screens */
+  }
+
+  .title {
+    font-size: 10vw; /* Adjust font size for smaller screens */
+  }
+
+  .description {
+    font-size: 4vw; /* Adjust font size for smaller screens */
+  }
+
+  .button {
+    padding: 3vw 6vw; /* Adjust padding for smaller screens */
+    font-size: 3vw; /* Adjust font size for smaller screens */
+    margin-top: 5vw; /* Adjust margin for smaller screens */
+  }
+
+  .dot {
+    height: 2vw; /* Adjust size for smaller screens */
+    width: 2vw; /* Adjust size for smaller screens */
+    margin-right: 2vw; /* Adjust margin for smaller screens */
+  }
+}
+
+@media (min-width: 1680px) {
+  .hero {
+    padding: 5vw 20vw; /* Adjust padding for larger screens */
+    min-height: 800px; /* Adjust minimum height for larger screens */
+  }
+
+  .servicesword {
+    font-size: 80px; /* Adjust font size for larger screens */
+  }
+
+  .title {
+    font-size: 60px; /* Adjust font size for larger screens */
+  }
+
+  .description {
+    font-size: 20px; /* Adjust font size for larger screens */
+  }
+
+  .button {
+    padding: 15px 30px; /* Adjust padding for larger screens */
+    font-size: 16px; /* Adjust font size for larger screens */
+    margin-top: 20px; /* Adjust margin for larger screens */
+  }
+
+  .dot {
+    height: 10px; /* Adjust size for larger screens */
+    width: 10px; /* Adjust size for larger screens */
+    margin-right: 10px; /* Adjust margin for larger screens */
+  }
+}
