@@ -11,7 +11,7 @@ export default function Cards() {
       <div className={styles.cardsContainer}>
         <div className={styles.card}>
         <Image
-        src="/DELIVER.PNG"
+        src="/qua.webp"
         width={100}
         height={80}
       />
@@ -20,7 +20,7 @@ export default function Cards() {
         </div>
         <div className={styles.card}>
         <Image
-        src="/free.png"
+        src="/qua.webp"
         width={100}
         height={80}
       />
