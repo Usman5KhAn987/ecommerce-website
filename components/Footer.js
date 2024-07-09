@@ -22,7 +22,7 @@ export default function Footer() {
             </p>
           </div>
         </div>
-        <div className={styles.footerSection}>
+        <div className={styles.footerSection2}>
           <h3>MENU</h3>
           <h3>Home</h3>
           <h3>About</h3>

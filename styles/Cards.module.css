@@ -1,29 +1,28 @@
 /* styles/Cards.module.css */
 
-/* Header Styles */
 .header {
   text-align: center;
   margin-bottom: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .header h3 {
   position: relative;
   display: inline-block;
-  font-size: 6vw; /* Responsive font size */
+  font-size: 6vw;
 }
 
 .header h3::after {
   content: '';
   display: block;
-  width: 50%; /* Adjust width as needed */
-  height: 3px; /* Adjust height as needed */
-  background-color: red; /* Change color as needed */
+  width: 50%;
+  height: 3px;
+  background-color: red;
   margin: 0 auto;
-  margin-top: 8px; /* Adjust margin as needed */
-  margin-bottom: -54px; /* Adjust margin as needed */
+  margin-top: 8px;
+  margin-bottom: -54px;
 }
 
-/* Cards Container Styles */
 .cardsContainer {
   display: flex;
   justify-content: space-around;
@@ -32,20 +31,19 @@
   flex-wrap: wrap;
   padding: 20px;
   background-color: white;
-  min-height: 500px; /* Minimum height */
+  min-height: 500px;
 }
 
-/* Card Styles */
 .card {
   border-radius: 10px;
   box-shadow: 0 4px 32px rgba(0, 0, 0, 0.1);
-  padding: 5vw; /* Responsive padding */
+  padding: 5vw;
   text-align: center;
   background-color: #002C3E;
-  width: 30vw; /* Responsive width */
-  max-width: 350px; /* Maximum width */
-  height: 30vw; /* Responsive height */
-  max-height: 350px; /* Maximum height */
+  width: 30vw;
+  max-width: 350px;
+  height: 30vw;
+  max-height: 350px;
   margin-bottom: 20px;
   transition: transform 0.2s, box-shadow 0.2s;
 }
@@ -56,13 +54,13 @@
 }
 
 .card h1 {
-  font-size: 5vw; /* Responsive font size */
+  font-size: 5vw;
   margin-bottom: 15px;
   color: white;
 }
 
 .card p {
-  font-size: 3vw; /* Responsive font size */
+  font-size: 3vw;
   color: white;
   margin-bottom: 20px;
 }
@@ -72,8 +70,8 @@
   border: none;
   border-radius: 5px;
   color: white;
-  padding: 1.5vw 3vw; /* Responsive padding */
-  font-size: 1.5vw; /* Responsive font size */
+  padding: 1.5vw 3vw;
+  font-size: 1.5vw;
   cursor: pointer;
   transition: background-color 0.3s;
 }
@@ -82,7 +80,7 @@
   background-color: #ff4500;
 }
 
-/* Responsive Design */
+/* Media Queries for screens up to 768px */
 @media (max-width: 768px) {
   .cardsContainer {
     flex-direction: column;
@@ -90,42 +88,86 @@
   }
 
   .card {
-    width: 80vw; /* Adjust width for smaller screens */
+    width: 80vw;
     height: auto;
-    padding: 10vw; /* Adjust padding for smaller screens */
+    padding: 10vw;
   }
 
   .card h1 {
-    font-size: 8vw; /* Adjust font size for smaller screens */
+    font-size: 8vw;
   }
 
   .card p {
-    font-size: 5vw; /* Adjust font size for smaller screens */
+    font-size: 5vw;
   }
 
   .card button {
-    padding: 3vw 6vw; /* Adjust padding for smaller screens */
-    font-size: 3vw; /* Adjust font size for smaller screens */
+    padding: 3vw 6vw;
+    font-size: 3vw;
   }
 }
 
-@media (min-width: 1680px) {
+/* Media Queries for screens up to 320px */
+@media (max-width: 320px) {
   .card {
-    width: 20vw; /* Adjust width for larger screens */
-    height: 20vw; /* Adjust height for larger screens */
-    padding: 2vw; /* Adjust padding for larger screens */
+    width: 80vw;
+    padding: 5vw;
   }
 
   .card h1 {
-    font-size: 3vw; /* Adjust font size for larger screens */
+    font-size: 10vw;
   }
 
   .card p {
-    font-size: 1.5vw; /* Adjust font size for larger screens */
+    font-size: 6vw;
   }
 
   .card button {
-    padding: 1vw 2vw; /* Adjust padding for larger screens */
-    font-size: 1vw; /* Adjust font size for larger screens */
+    padding: 4vw 8vw;
+    font-size: 4vw;
+  }
+}
+
+/* Media Queries for screens 1440px and up */
+@media (min-width: 1440px) {
+  .card {
+    width: 25vw;
+    height: 25vw;
+    padding: 4vw;
+  }
+
+  .card h1 {
+    font-size: 4vw;
+  }
+
+  .card p {
+    font-size: 2vw;
+  }
+
+  .card button {
+    padding: 1vw 2vw;
+    font-size: 1vw;
+  }
+}
+
+/* Media Queries for screens 1680px and up */
+@media (min-width: 1680px) {
+  .card {
+    width: 20vw;
+    height: 20vw;
+    padding: 2vw;
+  }
+
+  .card h1 {
+    font-size: 3vw;
+  }
+
+  .card p {
+    font-size: 1.5vw;
+  }
+
+  .card button {
+    padding: 1vw 2vw;
+    font-size: 1vw;
   }
 }

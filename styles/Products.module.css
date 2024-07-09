@@ -1,11 +1,11 @@
-/* styles/Products.module.css */
-
 .productconatiner {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   gap: 20px;
   margin: 20px 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
 }
 
 .cards {
@@ -13,14 +13,16 @@
   border-radius: 10px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   overflow: hidden;
-  width: calc(100% - 40px); /* Default to 100% width minus margins */
-  max-width: 450px; /* Maximum width */
-  height: auto; /* Auto height to adapt to content */
+  width: calc(100% - 40px); 
+  max-width: 450px; 
+  height: auto; 
   margin: 20px;
   padding: 40px;
   position: relative;
   transition: transform 0.2s, box-shadow 0.2s;
   text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
 }
 
 .cards:hover {
@@ -29,22 +31,22 @@
 }
 
 .pro {
-  font-size: 3.5vw; /* Responsive font size */
+  font-size: 3.5vw;
   color: #F7444E;
 }
 
 .h1::after {
   content: '';
   display: block;
-  width: 70px; /* Adjust width as needed */
-  height: 3px; /* Adjust height as needed */
-  background-color: red; /* Change color as needed */
+  width: 70px; 
+  height: 3px; 
+  background-color: red; 
   margin: 0 auto;
-  margin-top: 8px; /* Adjust margin as needed */
+  margin-top: 8px; 
 }
 
 .h1 {
-  font-size: 4vw; /* Responsive font size */
+  font-size: 4vw; 
   text-align: center;
   margin: 20px 0;
 }
@@ -56,11 +58,11 @@
 }
 
 .detailbox h6 {
-  font-size: 2.5vw; /* Responsive font size */
+  font-size: 2.5vw; 
 }
 
 .detailbox h5 {
-  font-size: 3vw; /* Responsive font size */
+  font-size: 3vw; 
 }
 
 .imageContainer {
@@ -94,7 +96,7 @@
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  font-size: 1.5vw; /* Responsive font size */
+  font-size: 1.5vw; 
   transition: background-color 0.3s, color 0.3s;
 }
 
@@ -119,13 +121,13 @@
 }
 
 .cards h1 {
-  font-size: 4vw; /* Responsive font size */
+  font-size: 4vw;
   color: #333;
   margin: 10px 0;
 }
 
 .cards p {
-  font-size: 2.5vw; /* Responsive font size */
+  font-size: 2.5vw; 
   color: #777;
   margin: 10px 0;
 }
@@ -133,13 +135,13 @@
 .button {
   display: block;
   margin: 20px auto;
-  padding: 2.5vw 5vw; /* Responsive padding */
+  padding: 2.5vw 5vw;
   background-color: #FF0404;
   color: #fff;
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  font-size: 2vw; /* Responsive font size */
+  font-size: 2vw;
   transition: background-color 0.3s, color 0.3s;
 }
 
@@ -148,76 +150,76 @@
   color: #fff;
 }
 
-/* Responsive Adjustments */
+
 @media (max-width: 768px) {
   .cards {
-    width: 100%; /* Full width on small screens */
-    padding: 20px; /* Adjust padding for smaller screens */
-  }
+    width: 100%;
+    padding: 20px; }
+    
 
   .pro {
-    font-size: 7vw; /* Larger font size on smaller screens */
+    font-size: 7vw; 
   }
 
   .h1 {
-    font-size: 8vw; /* Larger font size on smaller screens */
+    font-size: 8vw; 
   }
 
   .detailbox h6 {
-    font-size: 5vw; /* Larger font size on smaller screens */
+    font-size: 5vw; 
   }
 
   .detailbox h5 {
-    font-size: 6vw; /* Larger font size on smaller screens */
+    font-size: 6vw; 
   }
 
   .cards h1 {
-    font-size: 6vw; /* Larger font size on smaller screens */
+    font-size: 6vw;
   }
 
   .cards p {
-    font-size: 4vw; /* Larger font size on smaller screens */
+    font-size: 4vw; 
   }
 
   .button {
-    padding: 4vw 8vw; /* Adjust padding for smaller screens */
-    font-size: 4vw; /* Larger font size on smaller screens */
+    padding: 4vw 8vw; 
+    font-size: 4vw; 
   }
 }
 
 @media (min-width: 1680px) {
   .cards {
-    width: 350px; /* Fixed width for larger screens */
-    height: 350px; /* Fixed height for larger screens */
+    width: 350px; 
+    height: 350px;
     padding: 40px;
   }
 
   .pro {
-    font-size: 55px; /* Fixed font size for larger screens */
+    font-size: 55px; 
   }
 
   .h1 {
-    font-size: 55px; /* Fixed font size for larger screens */
+    font-size: 55px; 
   }
 
   .detailbox h6 {
-    font-size: 25px; /* Fixed font size for larger screens */
+    font-size: 25px; 
   }
 
   .detailbox h5 {
-    font-size: 30px; /* Fixed font size for larger screens */
+    font-size: 30px; 
   }
 
   .cards h1 {
-    font-size: 24px; /* Fixed font size for larger screens */
+    font-size: 24px;
   }
 
   .cards p {
-    font-size: 16px; /* Fixed font size for larger screens */
+    font-size: 16px; 
   }
 
   .button {
-    padding: 10px 20px; /* Fixed padding for larger screens */
-    font-size: 16px; /* Fixed font size for larger screens */
+    padding: 10px 20px;
+    font-size: 16px;
   }
 }

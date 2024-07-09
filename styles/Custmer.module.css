@@ -1,78 +1,196 @@
+/* styles/Testimonial.module.css */
 
 .testimonialSection {
-    text-align: center;
-    padding: 50px 20px;
+  text-align: center;
+  padding: 50px 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-  
+.title {
+  font-size: 80px;
+  font-weight: bold;
+}
+
+.separator {
+  width: 80px;
+  height: 5px;
+  background-color: #ff4d4f;
+  margin: 0 auto 80px;
+}
+
+.testimonialContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap; /* Added to make it responsive */
+}
+
+.arrowButton {
+  background-color: #ff4d4f;
+  border: none;
+  border-radius: 50%;
+  color: white;
+  font-size: 1.5em;
+  cursor: pointer;
+  margin: 20px; /* Adjusted for better responsiveness */
+  padding: 20px;
+}
+
+.testimonialContent {
+  text-align: center;
+  max-width: 600px;
+  flex: 1;
+  min-width: 300px;
+  padding-bottom: 55px;
+}
+
+.image {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+.name {
+  font-size: 50px;
+  font-weight: bold;
+  margin: 0;
+  text-align: center;
+}
+
+.role {
+  color: #888;
+  margin-bottom: 20px;
+}
+
+.box {
+  width: 600px;
+  height: 100px;
+  text-align: center;
+  align-items: center; 
+}
+
+.box .text {
+  font-size: 25px;
+  color: #555;
+  text-align: center;
+}
+
+/* Media Queries for smaller screens */
+@media (max-width: 768px) {
   .title {
-    font-size: 80px;
-    font-weight: bold;
-  }
-  
-  .separator {
-    width: 80px;
-    height: 5px;
-    background-color: #ff4d4f;
-    margin: 0 auto 80px;
-  }
-  
-  .testimonialContainer {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .arrowButton {
-    background-color: #ff4d4f;
-    border: none;
-    border-radius: 50%;
-    color: white;
-    font-size: 1.5em;
-    cursor: pointer;
-    margin-left: 100pX;
-    margin-right: 100px;
-    padding: 20px; /* Adjusted padding to make buttons smaller */
-  }
-  
-  .testimonialContent {
-    text-align: center;
-    max-width: 600px;
-    flex: 1;
-    min-width: 300px; /* Set a minimum width to prevent content from shifting */
-    padding-bottom: 55px;
-  }
-  
-  .image {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    object-fit: cover;
-    margin-bottom: 15px;
-  }
-  
-  .name {
     font-size: 50px;
-    font-weight: bold;
-    margin: 0;
-    text-align: center;
   }
-  
-  .role {
-    color: #888;
-    margin-bottom: 20px;
+
+  .separator {
+    margin: 0 auto 40px;
   }
-  
+
+  .arrowButton {
+    margin: 10px;
+    padding: 15px;
+    font-size: 1.2em;
+  }
+
+  .testimonialContent {
+    max-width: 100%;
+    padding: 20px;
+  }
+
+  .image {
+    width: 150px;
+    height: 150px;
+  }
+
+  .name {
+    font-size: 30px;
+  }
+
   .box {
-    width: 600px;
-    height: 100px;
-    text-align: center;
-    align-items: center; /* This applies to flex containers, not regular elements */
+    width: 100%;
+    padding: 10px;
   }
-  
+
   .box .text {
-    font-size: 25px;
-    color: #555;
-    text-align: center;
+    font-size: 20px;
   }
-  
+}
+
+/* Media Queries for screens smaller than 320px */
+@media (max-width: 320px) {
+  .title {
+    font-size: 40px;
+  }
+
+  .separator {
+    width: 60px;
+    height: 4px;
+    margin: 0 auto 20px;
+  }
+
+  .arrowButton {
+    margin: 5px;
+    padding: 10px;
+    font-size: 1em;
+  }
+
+  .testimonialContent {
+    max-width: 100%;
+    padding: 10px;
+  }
+
+  .image {
+    width: 100px;
+    height: 100px;
+  }
+
+  .name {
+    font-size: 25px;
+  }
+
+  .box .text {
+    font-size: 18px;
+  }
+}
+
+/* Media Queries for larger screens (1440px and up) */
+@media (min-width: 1440px) {
+  .title {
+    font-size: 100px;
+  }
+
+  .separator {
+    width: 100px;
+    height: 6px;
+  }
+
+  .arrowButton {
+    margin-left: 150px;
+    margin-right: 150px;
+    padding: 25px;
+    font-size: 2em;
+  }
+
+  .testimonialContent {
+    max-width: 700px;
+  }
+
+  .image {
+    width: 250px;
+    height: 250px;
+  }
+
+  .name {
+    font-size: 60px;
+  }
+
+  .box {
+    width: 700px;
+    height: 120px;
+  }
+
+  .box .text {
+    font-size: 30px;
+  }
+}

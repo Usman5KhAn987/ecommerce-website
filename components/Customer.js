@@ -6,7 +6,7 @@ const Customer = [
     name: 'Anna Trevor',
     role: 'Customer',
     image: 'slide.jpg',
-    text: 'Dignissimos reprehenderit repellendus nobis error quibusdam? Atque animi sint unde quis reprehenderit, et, perspiciatis, debitis totam est deserunt eius officiis ipsum ducimus ad labore modi voluptatibus accusantium sapiente nam! Quaerat.'
+    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.'
   },
   {
     name: 'John Doe',
@@ -18,7 +18,7 @@ const Customer = [
     name: 'Jane Smith',
     role: 'Customer',
     image: 'p8.png',
-    text: 'Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
+    text: 'Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.'
   }
 ];
 

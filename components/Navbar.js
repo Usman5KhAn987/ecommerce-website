@@ -5,7 +5,7 @@ import styles from '@/styles/Navabr.module.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHome, faShoppingCart, faChevronDown } from '@fortawesome/free-solid-svg-icons';
 import Image from 'next/image';
-import Dropdown from './Dropdown';
+
 
 
 export default function Navbar() {
@@ -30,18 +30,8 @@ export default function Navbar() {
           </div>
         </li>
         <li className={styles.navitem}>
-          <Dropdown
-            title="Page"
-            icon={faChevronDown}
-            links={[
-              { href: '/Cards', label: 'Cards' },
-              { href: '/Testimonial', label: 'Testimonial' },
-            ]}
-          />
-        </li>
-        <li className={styles.navitem}>
           <div className={styles.navlink} onClick={toggleMenu}>
-           <strong> Product</strong>
+           <strong><a href='/Product2'>Product</a></strong>
           </div>
         </li>
         <li className={styles.navitem}>
@@ -51,7 +41,7 @@ export default function Navbar() {
         </li>
         <li className={styles.navitem}>
           <div className={styles.navlink} onClick={toggleMenu}>
-            <strong>Contact</strong>
+            <strong><a href='/Contacts'>Contact</a></strong>
           </div>
         </li>
         <li className={`${styles.icon} ${styles.cart}`}>
@@ -60,7 +50,7 @@ export default function Navbar() {
           </Link>
         </li>
         <li className={`${styles.icon} ${styles.home}`}>
-          <Link href="/Home" passHref>
+          <Link href="/Cards" passHref>
             <FontAwesomeIcon icon={faHome} width={25} />
           </Link>
         </li>

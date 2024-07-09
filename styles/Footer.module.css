@@ -3,12 +3,6 @@
   padding: 20px 0;
 }
 
-.info p {
-  font-size: 30px;
-  padding-left: 25px;
-  text-decoration: white;
-}
-
 .container {
   display: flex;
   justify-content: space-between;
@@ -19,77 +13,101 @@
 .footerSection {
   flex: 1;
   margin: 10px;
-  margin-left:50px; 
+  margin-left: 20px;
 }
 
-.footerSection2{
-  margin-right: 10px;
-  width: 100px;
-  height: 100px;
-  padding-right: 500px;
+.footerSection2 {
+  flex: 1;
+  margin-right: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.footerSection2 h3{
-  font-size: 25px;
-  padding-right: 25px;
-} 
-
+.footerSection2 h3 {
+  font-size: 3vw;
+  margin-bottom: 10px;
+}
 
 .logo {
   height: 50px;
+  padding: 20px;
+  margin-left: 25px;
 }
 
 .footerSection1 {
-  margin-left: -210PX; 
+  flex: 1;
+  margin-left: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
 }
 
 .footerSection h3 {
+  font-size: 3vw;
   margin-bottom: 10px;
-  font-size: 25px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+.footerSection p {
+  font-size: 2vw;
+  margin-bottom: 10px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
 }
 
 .footer a {
   text-decoration: none;
-  }
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+.info {
+  flex: 1;
+  margin: 10px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+.info p {
+  font-size: 2vw;
+  padding-left: 2vw;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
 
 .info a {
   text-decoration: none;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
 }
-
-
 
 .form {
   display: flex;
   align-items: center;
-  padding-right: 0; 
-  width: 250px;
+  padding-right: 0;
+  width: 100%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
 }
 
 .form input {
-  padding: 10px; 
+  padding: 10px;
   margin-right: 10px;
-  border: 1px solid #ccc; 
+  border: 1px solid #ccc;
   border-radius: 3px;
-  width: 510px;
-}
+  width: 100%;
+  max-width: 510px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
-.footerSection1 h3 {
-  font-size: 25px;
 }
-
-.footerSection1 P{
-  font-size: 20px;
-  padding-right: 25px;
-} 
 
 .button {
-  padding: 10px 20px;
+  padding: 1vw 2vw;
   border: none;
   background-color: #ff4b5c;
   color: #fff;
   cursor: pointer;
   border-radius: 3px;
-  width: auto; 
+  width: auto;
 }
 
 .button:hover {
@@ -105,5 +123,135 @@
 
 .footerBottom p {
   margin: 5px 0;
-  font-size: 20px;
+  font-size: 2vw;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footerSection,
+  .footerSection1,
+  .footerSection2,
+  .info {
+    flex-basis: auto;
+    margin: 10px 0;
+    font-size: 25px;
+    text-align: center;
+  }
+
+  .footerSection,
+  .footerSection1,
+  .footerSection2 {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .footerSection2 {
+    margin-top: 20px;
+  }
+
+  .footerSection2 h3 {
+    font-size: 5vw;
+  }
+
+  .info p {
+    padding-left: 0;
+    font-size: 4vw;
+  }
+
+  .form input {
+    width: 90%;
+    max-width: none;
+    font-size: 4vw;
+  }
+
+  .button {
+    padding: 3vw 5vw;
+    font-size: 4vw;
+  }
+
+  .footerBottom p {
+    font-size: 3vw;
+  }
+}
+
+@media (min-width: 1680px) {
+  .footerSection2 h3 {
+    font-size: 25px;
+  }
+
+  .info p {
+    font-size: 30px;
+  }
+
+  .form input {
+    width: 510px;
+    font-size: 16px;
+  }
+
+  .button {
+    padding: 10px 20px;
+    font-size: 16px;
+  }
+
+  .footerBottom p {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .footerSection2 h3 {
+    font-size: 20px;
+  }
+
+  .info p {
+    font-size: 24px;
+  }
+
+  .form input {
+    width: 450px;
+    font-size: 18px;
+  }
+
+  .button {
+    padding: 12px 24px;
+    font-size: 18px;
+  }
+
+  .footerBottom p {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 320px) {
+  .footerSection {
+    margin: 5px 0;
+  }
+
+  .footerSection h3 {
+    font-size: 16px;
+  }
+
+  .info p {
+    font-size: 14px;
+  }
+
+  .form input {
+    width: 90%;
+    font-size: 14px;
+  }
+
+  .button {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+
+  .footerBottom p {
+    font-size: 14px;
+  }
 }
